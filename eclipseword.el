@@ -13,19 +13,19 @@
 ;; - end and beginning of a line
 
 ;; In the minor mode, all common key bindings for word oriented
-;; commands are overridden by the subword oriented commands:
+;; commands are overridden by the eclipseword oriented commands:
 
-;; Key     Word oriented command      Subword oriented command
+;; Key     Word oriented command      Eclipseword oriented command
 ;; ============================================================
-;; M-f     `forward-word'             `emacsword-forward'
-;; M-b     `backward-word'            `emacsword-backward'
-;; M-@     `mark-word'                `emacsword-mark'
-;; M-d     `kill-word'                `emacsword-kill'
-;; M-DEL   `backward-kill-word'       `emacsword-backward-kill'
-;; M-t     `transpose-words'          `emacsword-transpose'
-;; M-c     `capitalize-word'          `emacsword-capitalize'
-;; M-u     `upcase-word'              `emacsword-upcase'
-;; M-l     `downcase-word'            `emacsword-downcase'
+;; M-f     `forward-word'             `eclipseword-forward'
+;; M-b     `backward-word'            `eclipseword-backward'
+;; M-@     `mark-word'                `eclipseword-mark'
+;; M-d     `kill-word'                `eclipseword-kill'
+;; M-DEL   `backward-kill-word'       `eclipseword-backward-kill'
+;; M-t     `transpose-words'          `eclipseword-transpose'
+;; M-c     `capitalize-word'          `eclipseword-capitalize'
+;; M-u     `upcase-word'              `eclipseword-upcase'
+;; M-l     `downcase-word'            `eclipseword-downcase'
 ;;
 ;; Note: If you have changed the key bindings for the word oriented
 ;; commands in your .emacs or a similar place, the keys you've changed
@@ -34,7 +34,7 @@
 ;; To make the mode turn on automatically, put the following code in
 ;; your .emacs:
 ;;   (add-hook 'c-mode-common-hook
-;;        (lambda () (subword-mode 1)))
+;;        (lambda () (eclipseword-mode 1)))
 ;;
 ;; Or instead add:
 ;;   (global-eclipseword-mode 1)
