@@ -4,27 +4,27 @@ eclipseword-mode
 An Emacs minor mode for handling words (almost) like Eclipse does.
 
 This mode considers the following in its word definition:
-- camel case e.g.
+- camel case, e.g.
   ```
   these|Are|Different|Words
   ```
 
-- multiple upper-case characters e.g.
+- multiple upper-case characters, e.g.
   ```
   THESE|are|DIFFERENT|words
   ```
 
-- numbers e.g.
+- numbers, e.g.
   ```  
    these|Are|33|WORDS
   ```
 
-- symbols e.g. 
+- symbols, e.g. 
   ```
   these|((|are|))|words
   ```
 
-- single white space (different when moving forward and backward) e.g. 
+- single white space (different when moving forward and backward), e.g. 
   ```
   these| are| words| forward
   ```
@@ -33,7 +33,7 @@ This mode considers the following in its word definition:
   these |are |words |backward
   ```
 
-- single underscore characters (different when moving forward and backward) e.g. 
+- single underscore characters (different when moving forward and backward), e.g. 
   ```
   these|_are|_words|_forward
   ``` 
@@ -42,12 +42,12 @@ This mode considers the following in its word definition:
   these_|are_|words_|backward
   ```
 
-- multiple white spaces 
+- multiple white spaces, e.g.
   ```
   these|     |are|     |words
   ```
 
-- end and beginning of a line
+- end and beginning of a line, e.g.
   ```
   |      |these|
   |are|        |
